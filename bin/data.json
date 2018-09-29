@@ -1,0 +1,16 @@
+{
+  "pizzas":[
+    {
+      "name": "Margerita",
+      "components": ["sauce","cheese"]
+    },
+    {
+      "name": "Bacon",
+      "components": ["sauce","cheese","bacon"]
+    }
+  ],
+  "components": ["ham","bacon","chicken","salami","champignon",
+    "chili","pineapple","tuna","onion","shrimp","pepper",
+    "tomato","basil","oregano","tabasco"
+  ]
+}
