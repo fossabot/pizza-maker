@@ -1,0 +1,28 @@
+{
+  "name": "pizza-maker",
+  "version": "1.0.0",
+  "description": "Best Pizza Maker",
+  "main": "index.js",
+  "bin": {
+    "pizza": "./bin/cli.js"
+  },
+  "preferGlobal": true,
+  "scripts": {},
+  "keywords": [
+    "cli",
+    "pizza",
+    "interactive"
+  ],
+  "author": "Krystian Jońca <krystianjonca43@gmail.com>",
+  "repository": "https://github.com/KrystianJonca",
+  "bugs": {
+    "url": "https://github.com/KrystianJonca/"
+  },
+  "homepage": "https://github.com/KrystianJonca/",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.18.0",
+    "inquirer": "^6.2.0"
+  }
+}
