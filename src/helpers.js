@@ -1,5 +1,5 @@
 import inquirer from 'inquirer';
-import chalk from "chalk";
+import chalk from 'chalk';
 
 export default {
   new() {
@@ -17,13 +17,13 @@ export default {
       type: 'confirm',
       name: 'exit',
       message: 'Are you sure want to exit?',
-      default: true
-    }]).then(answer => {
+      default: true,
+    }]).then((answer) => {
       if (answer.exit) {
         console.log(chalk`{bold.blue Till next time! :)}`);
         process.exit(1);
       }
       showMenu();
-    })
-  }
-}
+    });
+  },
+};

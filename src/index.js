@@ -1,5 +1,5 @@
 import inquirer from 'inquirer';
-import chalk from "chalk";
+import chalk from 'chalk';
 import { version } from '../package.json';
 
 import helpers from './helpers';
@@ -28,26 +28,24 @@ function showMenu() {
         choices: [
           {
             name: 'Cook a new pizza',
-            value: 'new'
+            value: 'new',
           },
           {
             name: 'Select from menu',
-            value: 'get'
+            value: 'get',
           },
           new inquirer.Separator(),
           {
             name: chalk`{bold.red Exit}`,
-            value: 'exit'
-          }
-        ]
-      }
+            value: 'exit',
+          },
+        ],
+      },
     ])
-    .then(answers => {
-      return helpers[answers.option](showMenu);
-    });
+    .then(answers => helpers[answers.option](showMenu));
 }
 
-export default showMenu().catch(err => {
+export default showMenu().catch((err) => {
   console.log(chalk`{bold.red Something went wrong! :( \n ${err}}`);
   process.exit(1);
 });
