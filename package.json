@@ -8,7 +8,7 @@
   },
   "preferGlobal": true,
   "scripts": {
-    "build": "rimraf ./dist && babel ./src -d ./lib",
+    "build": "rimraf ./lib && babel ./src -d ./lib",
     "prepublish": "npm run build"
   },
   "keywords": [
