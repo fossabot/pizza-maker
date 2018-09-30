@@ -1,7 +1,6 @@
 import inquirer from 'inquirer';
 import chalk from 'chalk';
-import { version } from '../package.json';
-
+import { version } from '../package';
 import helpers from './helpers';
 
 function showMenu() {
@@ -42,10 +41,10 @@ function showMenu() {
         ],
       },
     ])
-    .then(answers => helpers[answers.option](showMenu));
+    .then(answer => helpers[answer.option](showMenu));
 }
 
-export default showMenu().catch((err) => {
+export default showMenu().catch(err => {
   console.log(chalk`{bold.red Something went wrong! :( \n ${err}}`);
   process.exit(1);
 });
